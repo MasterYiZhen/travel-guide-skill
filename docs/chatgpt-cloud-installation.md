@@ -10,7 +10,7 @@ ChatGPT Desktop 当前没有发现技能上传入口；上传在 ChatGPT 网页�
 
 ## 运行时包与发布目录
 
-Git 工作树中的 `SKILL.md` 和 `agents/openai.yaml` 是唯一运行时源码。上传完整 ZIP，而不是单独上传 `SKILL.md`，因为本 Skill 还需要 `agents/openai.yaml` 中的调用策略。ZIP 内固定只包含：
+仓库根目录的 `SKILL.md` 和 `agents/openai.yaml` 是唯一可编辑的运行时源码。`dist/` 由这两份源码生成并随 Git commit 保存，不作为独立编辑源。上传完整 ZIP，而不是单独上传 `SKILL.md`，因为本 Skill 还需要 `agents/openai.yaml` 中的调用策略。ZIP 内固定只包含：
 
 ```text
 travel-guide-skill/
@@ -34,25 +34,32 @@ dist/
     └── travel-guide-skill-<latest-version>.zip
 ```
 
-- `dist/build/` 是从当前 Git 工作树组装的临时展开目录，每次构建前可以清理并重建。
-- `dist/releases/` 保存带明确版本号的本机发布档案；构建不得自动删除其中的旧版本。
-- `dist/upload/` 只保留一个当前待上传 ZIP，可在准备新版本时清理并重建；其中的 ZIP 必须与 `dist/releases/` 中同版本文件逐字节一致。
+- `dist/build/` 保存当前 commit 对应的展开运行包，必须与根目录运行时源码逐字节一致；准备新运行时版本时由根目录源码重建并在同一 commit 中更新。
+- `dist/releases/` 保存仓库中的版本化发布产物历史；构建不得覆盖或删除其中的任何已有版本。
+- `dist/upload/` 只保留一个当前推荐上传的最新版 ZIP；其中的 ZIP 必须与 `dist/releases/` 中同版本文件逐字节一致。发布新版本时删除这里的上一版本并复制新版本，但旧版本继续保留在 `releases/` 和 Git 历史中。
 
 上传包不得包含 `docs/`、`evals/`、`.git/`、`.DS_Store`、README、`.gitignore`、历史证据、测试材料或其他开发文件。
 
 ## 版本规则
 
 - 已经上传或发布的版本化 ZIP 不可重写或覆盖。
+- `dist/releases/` 中的已有版本不可删除，也不得通过删除后重用同一版本号。
 - 发布内容发生新变化时，先选择新的递增版本号；目标 ZIP 已存在时必须停止，改用新版本号。
 - 当前已发布候选是 `v0.1.0-rc.1`；下一次候选实现应使用 `v0.1.0-rc.2`，不得继续覆盖 `rc.1`。
 - 版本升级应与实际发布内容变化对应。仅修改文档且上传包中的运行时内容没有变化时，不强制生成新 ZIP；只有运行时内容发生变化或确实需要重新发布时，才创建新版本候选。
 - 清理 `build/` 和 `upload/` 不得影响 `releases/`，也不得使用通配符清空历史发布档案。
 
+## 提交一致性
+
+同一个 Git commit 必须保存相互对应的根目录运行时源码、`dist/build/` 展开包、`dist/releases/` 版本化 ZIP 和 `dist/upload/` 当前候选。任何人 clone 或 checkout 该 commit 后，都能直接获得同一份可上传产物，无需重新构建当前发布包。
+
+运行时版本发生变化时，在同一个 commit 中提交根目录源码修改、`dist/build/` 更新、`dist/releases/` 新版本 ZIP、`dist/upload/` 从上一版本切换到新版本，以及必要的 Eval 或文档变化。不得出现源码与 `dist/` 版本不一致、覆盖旧 release，或 `upload/` 同时存在多个候选的状态。
+
 ## 首次安装
 
-1. 确认 Git 工作树中的 Skill 源码已经完成修改和验证。
-2. 确认 `dist/upload/` 中已有一个经过验证的当前候选 ZIP；如尚未准备候选，按下方“生成新版本候选”操作。
-3. 确认该 ZIP 与 `dist/releases/` 中同版本文件逐字节一致。
+1. clone 或 checkout 要使用的 Git commit。
+2. 确认 `dist/upload/` 中只有一个经过验证的当前候选 ZIP。
+3. 确认该 ZIP 与 `dist/releases/` 中同版本文件逐字节一致；当前发布包不需要重新构建。
 4. 在 ChatGPT 网页端进入“插件”→“技能”→ `+` →“上传技能文件”。
 5. 从 `dist/upload/` 选择当前最新 ZIP 上传。
 6. 在新的 Cloud Work 中显式选择 `Travel Guide Skill`。
@@ -61,16 +68,16 @@ dist/
 
 ## 后续更新
 
-1. Codex 修改 Git 中的运行时源码。
+1. 修改 Git 中的运行时源码。
 2. 完成静态检查。
-3. 为新的候选选择递增版本号。
-4. 从最新 Git 工作树生成临时展开目录。
-5. 创建新的版本化 ZIP 到 `dist/releases/`。
-6. 不覆盖任何已存在版本。
-7. 清理并更新 `dist/upload/`，使其只包含新版本。
-8. 验证发布 ZIP、源码和待上传副本。
-9. commit 并 push 源码或文档变更。
-10. 用户从 `dist/upload/` 将新 ZIP 上传到 ChatGPT 网页端。
+3. 选择递增的新版本号。
+4. 从最新根目录源码更新 `dist/build/`。
+5. 在 `dist/releases/` 新增新版本 ZIP，不覆盖任何已有版本。
+6. 将 `dist/upload/` 切换为该新版本，使其只包含一个 ZIP。
+7. 验证根目录源码、build、release ZIP 和 upload ZIP。
+8. 将源码、`dist/` 及必要文档一起 commit。
+9. push 当前 commit。
+10. 从 `dist/upload/` 将唯一 ZIP 上传到 ChatGPT 网页端。
 11. 在干净 Cloud Work 中做轻量验证，确认后再用于真实旅行项目。
 
 > Git 源码发生变化后，已经上传到 ChatGPT 的云端 Skill 不会因为 Git 更新而自动同步；需要重新生成上传包并在网页端更新。
@@ -92,7 +99,7 @@ UPLOAD_ZIP="$UPLOAD_DIR/travel-guide-skill-$VERSION.zip"
 
 if [ -e "$RELEASE_ZIP" ]; then
   echo "Release already exists: $RELEASE_ZIP"
-  echo "Choose a new version instead of overwriting an existing release."
+  echo "Choose a new version instead of overwriting it."
   exit 1
 fi
 
@@ -117,7 +124,7 @@ cp "$RELEASE_ZIP" "$UPLOAD_ZIP"
 cmp "$RELEASE_ZIP" "$UPLOAD_ZIP"
 ```
 
-该示例只清理 `build/` 和 `upload/`，不清理 `releases/`。如果相同版本已存在，命令会在清理前停止；此时应提升版本号，而不是删除旧 ZIP。成功后，`upload/` 中的唯一 ZIP 与 `releases/` 中对应版本完全一致。
+该示例只清理 `build/` 和 `upload/`，不清理 `releases/`。如果相同版本已存在，命令会在清理前停止；此时应提升版本号，而不是删除旧 ZIP。成功后，`upload/` 中的唯一 ZIP 与 `releases/` 中对应版本完全一致。该命令会更新 Git 跟踪的 `dist/` 内容，执行后必须审查并与对应源码变更一起提交；不建立额外打包脚本。
 
 ## 验证与保存边界
 
@@ -127,8 +134,8 @@ cmp "$RELEASE_ZIP" "$UPLOAD_ZIP"
 - 包内文件与当前 Git 工作树中的源码逐字节一致；
 - `SKILL.md` frontmatter 中存在 `name: travel-guide-skill` 和非空 `description`；
 - `agents/openai.yaml` 中存在 `allow_implicit_invocation: false`；
-- `dist/build/travel-guide-skill/` 能通过仓库已有的 `quick_validate.py`；
+- 根目录和 `dist/build/travel-guide-skill/` 均能通过仓库已有的 `quick_validate.py`；
 - `dist/upload/` 只包含一个当前候选 ZIP，且与 `dist/releases/` 中同版本文件逐字节一致；
-- `git status` 没有把 `dist/` 识别为待提交源码。
+- `git diff` 同时包含运行时源码及其对应的 `dist/` 更新，并且没有意外的 `.DS_Store`、临时解压目录或其他文件。
 
-`dist/` 继续由 `.gitignore` 忽略。`build/`、`releases/` 和 `upload/` 都是从运行时源码生成的派生产物，不提交 Git，以避免二进制历史、双份源码和版本漂移。由于整个 `dist/` 被忽略，`dist/releases/` 只是当前电脑上的发布档案，不会随 `git clone` 自动恢复；正式稳定版本未来可以通过 GitHub Release 持久保存 ZIP，但本轮不创建 GitHub Release 或 Git tag。
+`dist/build/`、`dist/releases/` 和 `dist/upload/` 都由普通 Git 正式跟踪。可编辑真值仍是仓库根目录的运行时源码；提交派生产物是为了让同一 commit 对应同一展开包、历史 release 和当前上传 ZIP，而不是建立第二套独立源码。
