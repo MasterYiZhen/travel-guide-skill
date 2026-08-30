@@ -45,7 +45,7 @@ dist/
 - 已经上传或发布的版本化 ZIP 不可重写或覆盖。
 - `dist/releases/` 中的已有版本不可删除，也不得通过删除后重用同一版本号。
 - 发布内容发生新变化时，先选择新的递增版本号；目标 ZIP 已存在时必须停止，改用新版本号。
-- 当前已发布候选是 `v0.1.0-rc.1`；下一次候选实现应使用 `v0.1.0-rc.2`，不得继续覆盖 `rc.1`。
+- 当前已发布候选是 `v0.1.0-rc.2`；下一次候选实现应使用 `v0.1.0-rc.3`，不得继续覆盖 `rc.2`。
 - 版本升级应与实际发布内容变化对应。仅修改文档且上传包中的运行时内容没有变化时，不强制生成新 ZIP；只有运行时内容发生变化或确实需要重新发布时，才创建新版本候选。
 - 清理 `build/` 和 `upload/` 不得影响 `releases/`，也不得使用通配符清空历史发布档案。
 
@@ -84,10 +84,10 @@ dist/
 
 ## 生成新版本候选
 
-仅当运行时内容发生变化或确实需要重新发布时，在仓库根目录执行以下参数化示例。以 `v0.1.0-rc.2` 为下一候选示例；实际执行前应选择与发布内容对应的新版本号。
+仅当运行时内容发生变化或确实需要重新发布时，在仓库根目录执行以下参数化示例。以 `v0.1.0-rc.3` 为下一候选示例；实际执行前应选择与发布内容对应的新版本号。
 
 ```bash
-VERSION="v0.1.0-rc.2"
+VERSION="v0.1.0-rc.3"
 
 ROOT="$(pwd)"
 BUILD_ROOT="$ROOT/dist/build"
@@ -130,12 +130,12 @@ cmp "$RELEASE_ZIP" "$UPLOAD_ZIP"
 
 发布前至少确认：
 
-- ZIP 可以正常解压，顶层目录是 `travel-guide-skill/`，且只包含两个运行时文件；
-- 包内文件与当前 Git 工作树中的源码逐字节一致；
-- `SKILL.md` frontmatter 中存在 `name: travel-guide-skill` 和非空 `description`；
-- `agents/openai.yaml` 中存在 `allow_implicit_invocation: false`；
-- 根目录和 `dist/build/travel-guide-skill/` 均能通过仓库已有的 `quick_validate.py`；
-- `dist/upload/` 只包含一个当前候选 ZIP，且与 `dist/releases/` 中同版本文件逐字节一致；
-- `git diff` 同时包含运行时源码及其对应的 `dist/` 更新，并且没有意外的 `.DS_Store`、临时解压目录或其他文件。
+- 检查 `SKILL.md` frontmatter，确认存在 `name: travel-guide-skill` 和非空 `description`；
+- 检查 `agents/openai.yaml`，确认存在 `allow_implicit_invocation: false`；
+- 使用 `cmp` 分别比较根目录与 `dist/build/travel-guide-skill/` 中的 `SKILL.md` 和 `agents/openai.yaml`；
+- 使用 `unzip -t` 检查 release ZIP 可以完整解压；
+- 使用 `unzip -Z1` 检查 ZIP 文件列表，确认顶层目录是 `travel-guide-skill/`，且只包含 `SKILL.md` 和 `agents/openai.yaml`；
+- 使用 `cmp` 比较 `dist/releases/` 与 `dist/upload/` 中的同版本 ZIP；
+- 确认 `dist/upload/` 中只有一个当前候选 ZIP。
 
 `dist/build/`、`dist/releases/` 和 `dist/upload/` 都由普通 Git 正式跟踪。可编辑真值仍是仓库根目录的运行时源码；提交派生产物是为了让同一 commit 对应同一展开包、历史 release 和当前上传 ZIP，而不是建立第二套独立源码。
