@@ -35,6 +35,6 @@ README 和安装说明切换到 rc.4 及本记录，后续构建示例改为 rc.
 
 ## 交付与未验证状态
 
-**实现与安装包：** 本次范围内的规则、定向文本场景、结构和打包检查通过。安装文件为 [rc.4 ZIP](../dist/upload/travel-guide-skill-v0.1.0-rc.4.zip)，根目录源码、展开包、release、upload 及文档随同一 Git 提交保存。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.4.zip` 定位实现提交；推送结果及提交号由本次交付回复提供，并可与 GitHub main 核对。
+**实现与安装包：** 本次范围内的规则、定向文本场景、结构和打包检查通过。安装文件为 [rc.4 ZIP](../dist/releases/travel-guide-skill-v0.1.0-rc.4.zip)，根目录源码、展开包、release、upload 及文档随同一 Git 提交保存。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.4.zip` 定位实现提交；推送结果及提交号由本次交付回复提供，并可与 GitHub main 核对。
 
 **真实旅行任务：尚未验证。** 本轮没有生成旅行图片、启动 Reviewer、实际修图或执行用户验收，也未安装到云端或验证云端加载。实际图片质量、系列一致性、独立审核修复及用户验收流程，仍待安装后完整旅行任务验证。上述文本与安装包检查不代表这些环节实际通过。
