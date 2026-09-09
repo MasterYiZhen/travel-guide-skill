@@ -68,7 +68,7 @@ E15 A 的供餐窗口也能满足：例如 09:30—09:40 通行，09:40—12:00 
 
 ## 真实旅行任务效果与交付状态
 
-本地实现和安装包已完成上述检查：[当前 rc.6 ZIP](../dist/upload/travel-guide-skill-v0.1.0-rc.6.zip)，[rc.6 release](../dist/releases/travel-guide-skill-v0.1.0-rc.6.zip)。用户已授权提交并推送，源码、文档、评测和产物作为同一提交交付。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.6.zip` 定位本版实现提交；实际推送结果及本地、跟踪分支与远端提交号核对结果见交付回复。未创建 GitHub Release 或替换云端 Skill。
+本地实现和安装包已完成上述检查：[当前 rc.6 ZIP](../dist/releases/travel-guide-skill-v0.1.0-rc.6.zip)，[rc.6 release](../dist/releases/travel-guide-skill-v0.1.0-rc.6.zip)。用户已授权提交并推送，源码、文档、评测和产物作为同一提交交付。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.6.zip` 定位本版实现提交；实际推送结果及本地、跟踪分支与远端提交号核对结果见交付回复。未创建 GitHub Release 或替换云端 Skill。
 
 **真实旅行任务效果尚未验证。** 本轮没有进行真实景点研究、图片生成、独立 Reviewer、修图、正式复审、旅行用户验收或现场使用。结构、文本和安装包检查仅证明实际执行范围。
 
