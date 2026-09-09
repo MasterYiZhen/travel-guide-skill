@@ -56,7 +56,7 @@
 
 ## 真实旅行任务效果与交付状态
 
-**实现及安装包：已完成上述检查。** 当前安装文件为 [rc.5 ZIP](../dist/upload/travel-guide-skill-v0.1.0-rc.5.zip)，永久归档为 [rc.5 release](../dist/releases/travel-guide-skill-v0.1.0-rc.5.zip)。用户已授权提交并推送，源码、文档、评测及产物随同一 Git 提交保存。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.5.zip` 定位实现提交；实际推送结果及本地、跟踪分支与远端提交号核对结果见交付回复。未创建 GitHub Release，未替换或验证云端安装。
+**实现及安装包：已完成上述检查。** 当前安装文件为 [rc.5 ZIP](../dist/releases/travel-guide-skill-v0.1.0-rc.5.zip)，永久归档为 [rc.5 release](../dist/releases/travel-guide-skill-v0.1.0-rc.5.zip)。用户已授权提交并推送，源码、文档、评测及产物随同一 Git 提交保存。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.5.zip` 定位实现提交；实际推送结果及本地、跟踪分支与远端提交号核对结果见交付回复。未创建 GitHub Release，未替换或验证云端安装。
 
 **真实旅行任务效果：尚未验证。** 本轮未执行真实景点研究、图片生成、独立 Reviewer、修图、复审或旅行用户验收，未发生现场使用。结构、文本与安装包检查均不替代这些环节。
 
