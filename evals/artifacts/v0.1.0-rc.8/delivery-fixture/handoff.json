@@ -1,0 +1,10 @@
+{
+  "candidate": "v2",
+  "accepted": "simulated user accepted v2",
+  "pages": 2,
+  "local_file": "/private/tmp/travel-guide-rc8-delivery/candidate-v2.pdf",
+  "sha256": "00dfea3218ecb97a4f9c5349c56f5e7d6ebe0b2b307ab5dee67b1231e071b2ef",
+  "pdf_link": "http://127.0.0.1:18768/current.pdf",
+  "archive_link": "http://127.0.0.1:18768/materials.zip",
+  "long_term_save": "tool failure: simulated storage unavailable"
+}

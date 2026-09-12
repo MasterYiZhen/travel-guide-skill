@@ -1,0 +1,36 @@
+{
+  "candidate": "v2",
+  "accepted": "simulated user acceptance",
+  "pdf": {
+    "file": "accepted-v2.pdf",
+    "pages": 2,
+    "page_size_points": [
+      540,
+      720
+    ],
+    "sha256": "00dfea3218ecb97a4f9c5349c56f5e7d6ebe0b2b307ab5dee67b1231e071b2ef",
+    "source_identical": true
+  },
+  "images": [
+    {
+      "page": 1,
+      "file": "v2-page-1.png",
+      "width": 1080,
+      "height": 1440,
+      "sha256": "f0d50562a379dd145e9c89892a6b5e5b5820ba49495e4f7c6e06efa2278a1bd4"
+    },
+    {
+      "page": 2,
+      "file": "v2-page-2.png",
+      "width": 1080,
+      "height": 1440,
+      "sha256": "23262e313b6a1daeeec3413b340e2eb537334542e81ecfdf0ba5e2de89b0a789"
+    }
+  ],
+  "visual_inspection": "Actually viewed v2 pages 1 and 2; titles, order, departure 15:21 and readable rendering checked. This is delivery verification, not a visual Reviewer or system PASS.",
+  "scope": "Recovery delivery bundle only: accepted PDF, two exported page images, this manifest. Original production materials archive unavailable.",
+  "remote_pdf_status": "HTTP 200 serves v1; not repaired",
+  "materials_archive_status": "HTTP 503; unavailable",
+  "long_term_save_status": "handoff reports simulated storage unavailable; not verified or repaired",
+  "user_download_status": "not observed"
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "key": "gen1",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-e41eca39-10c7-4962-b3b1-adc623a55efc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen1v2",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-f6160b86-107d-477a-a570-2a4f0bc7af07.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen1v3",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-a0193483-4f9f-487d-b7f0-341e068c5aed.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen2",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-ee6f107e-6397-40df-9eae-d258888fa567.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen2v2",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-0095ae8a-0dc3-4104-aaa7-dae892dbfb7e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen3",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-3f054b3b-6200-44a0-a996-ae354acba914.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen4",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-b27cb4b0-390d-4d33-b5dd-cc3222bac3aa.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen4v2",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-7aded17b-dfde-4773-be94-ce69b5b74ea9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen5",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-8793b5ea-b363-446b-9a8f-6bca1b8385b4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen5v2",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-82f5af12-c095-4965-8884-7aa716302efd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  },
+  {
+    "key": "gen5v3",
+    "output_hint": "Generated images are saved to /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f as /Users/masteryi/.codex/generated_images/01a096d5-aa72-7370-9c43-5ec53006ad6f/exec-a78bea12-8b11-4d73-95fc-439cbc4b9555.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "has_image": true
+  }
+]

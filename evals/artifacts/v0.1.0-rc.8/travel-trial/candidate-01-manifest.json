@@ -1,0 +1,62 @@
+{
+  "candidate": "tiantan-candidate-01",
+  "simulated_user_confirmation": true,
+  "formal_review": "pending_budget_limit",
+  "pages": [
+    {
+      "page": 1,
+      "version": "v3",
+      "status": "self_checked_ready_for_independent_review",
+      "file": "/private/tmp/travel-guide-rc8-trial/images/page-01-v3.png",
+      "bytes": 2583349,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "f40fbeb03ea1d966f60772b3169bfd59df92aff4a82c2f0c72eb18e6ae836708",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 2,
+      "version": "v2",
+      "status": "self_checked_ready_for_independent_review",
+      "file": "/private/tmp/travel-guide-rc8-trial/images/page-02-v2.png",
+      "bytes": 2151709,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "52a7f0efe1f07d015302753680579a0374bdb2d2c79cb731298c812bcce9c6c3",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 3,
+      "version": "v1",
+      "status": "self_checked_ready_for_independent_review",
+      "file": "/private/tmp/travel-guide-rc8-trial/images/page-03-v1.png",
+      "bytes": 2697001,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "e2f1ae11709b01781120215fc3ea0b41abb7d1d1955ae29d648d2c30db33d057",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 4,
+      "version": "v2",
+      "status": "self_checked_ready_for_independent_review",
+      "file": "/private/tmp/travel-guide-rc8-trial/images/page-04-v2.png",
+      "bytes": 2638250,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "3f7044b0f6b83469bb7bd2b7e9ca745836140b9f9f3e2087aa66631b64d84d1c",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 5,
+      "version": "v3",
+      "status": "self_checked_ready_for_independent_review",
+      "file": "/private/tmp/travel-guide-rc8-trial/images/page-05-v3.png",
+      "bytes": 2304019,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "8ed2438ac52d502ff9884a4da443923f60a5554c4877f47c18a7464de0a0f4ca",
+      "pending_required_revisions": []
+    }
+  ]
+}

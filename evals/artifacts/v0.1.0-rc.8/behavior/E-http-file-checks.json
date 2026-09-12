@@ -1,0 +1,63 @@
+[
+  {
+    "operation": "read local accepted PDF",
+    "path": "/private/tmp/travel-guide-rc8-delivery/candidate-v2.pdf",
+    "bytes": 2051,
+    "sha256": "00dfea3218ecb97a4f9c5349c56f5e7d6ebe0b2b307ab5dee67b1231e071b2ef",
+    "matches_handoff_hash": true,
+    "pdf": {
+      "pages": 2,
+      "page_texts": [
+        "Candidate v2 - page 1\nMuseum -> exit -> rail station\nDepart museum: 15:21\nApproved version: v2. Simulation fixture.\n",
+        "Candidate v2 - page 2\nMuseum -> exit -> rail station\nDepart museum: 15:21\nApproved version: v2. Simulation fixture.\n"
+      ],
+      "page_sizes_points": [
+        [
+          540.0,
+          720.0
+        ],
+        [
+          540.0,
+          720.0
+        ]
+      ]
+    }
+  },
+  {
+    "operation": "HTTP GET",
+    "url": "http://127.0.0.1:18768/current.pdf",
+    "final_url": "http://127.0.0.1:18768/current.pdf",
+    "status": 200,
+    "headers": {
+      "Server": "BaseHTTP/0.6 Python/3.9.6",
+      "Date": "Sat, 12 Sep 2026 18:18:15 GMT",
+      "Content-Type": "application/pdf"
+    },
+    "bytes": 2045,
+    "sha256": "c4e21b1d757375e6505a3b31cf101a6a280ccbd522b4d24d5973814c77130341",
+    "saved_to": "/private/tmp/travel-guide-rc8-behavior/download-current.pdf",
+    "matches_accepted_local": false,
+    "pdf": {
+      "pages": 2,
+      "page_texts": [
+        "Candidate v1 - page 1\nMuseum -> exit -> rail station\nDepart museum: 15:00\nApproved version: v2. Simulation fixture.\n",
+        "Candidate v1 - page 2\nMuseum -> exit -> rail station\nDepart museum: 15:00\nApproved version: v2. Simulation fixture.\n"
+      ],
+      "page_sizes_points": [
+        [
+          540.0,
+          720.0
+        ],
+        [
+          540.0,
+          720.0
+        ]
+      ]
+    }
+  },
+  {
+    "operation": "HTTP GET",
+    "url": "http://127.0.0.1:18768/materials.zip",
+    "error": "<HTTPError 503: 'Service Unavailable'>"
+  }
+]

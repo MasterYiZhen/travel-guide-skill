@@ -1,0 +1,66 @@
+[
+  {
+    "object": "hall",
+    "url": "https://www.tiantanpark.cn/Uploads/Picture/2025/10/09/s68e76c8349883.jpeg",
+    "accessed": "2026-09-13",
+    "local": "references/hall.jpg",
+    "viewed": true,
+    "used_as_generation_input": true
+  },
+  {
+    "object": "mound",
+    "url": "https://www.tiantanpark.cn/Uploads/Picture/2025/10/05/s68e2563c69589.jpg",
+    "accessed": "2026-09-13",
+    "local": "references/mound.jpg",
+    "viewed": true,
+    "used_as_generation_input": true
+  },
+  {
+    "object": "echo",
+    "url": "https://www.tiantanpark.cn/Uploads/Picture/2025/10/09/s68e768ad85bbc.jpg",
+    "accessed": "2026-09-13",
+    "local": "references/echo.jpg",
+    "viewed": true,
+    "used_as_generation_input": true
+  },
+  {
+    "object": "vault",
+    "url": "https://www.tiantanpark.cn/Uploads/Picture/2025/10/09/s68e7699486726.JPG",
+    "accessed": "2026-09-13",
+    "local": "references/vault.jpg",
+    "viewed": true,
+    "used_as_generation_input": true
+  },
+  {
+    "object": "bridge",
+    "url": "https://www.tiantanpark.cn/Uploads/Picture/2025/11/29/s692a9f8e7b7d1.jpg",
+    "accessed": "2026-09-13",
+    "local": "references/bridge.jpg",
+    "viewed": true,
+    "used_as_generation_input": true
+  },
+  {
+    "object": "corridor",
+    "url": "https://www.tiantanpark.cn/Uploads/Picture/2025/10/09/s68e77bd68881e.jpg",
+    "accessed": "2026-09-13",
+    "local": "references/corridor.jpg",
+    "viewed": true,
+    "used_as_generation_input": true
+  },
+  {
+    "object": "map",
+    "url": "https://www.tiantanpark.cn/Public/static/themes/image/jjl/navigation_map2.jpg",
+    "accessed": "2026-09-13",
+    "local": "references/map.jpg",
+    "viewed": true,
+    "used_as_generation_input": true
+  },
+  {
+    "object": "ticket-prices",
+    "url": "https://www.tiantanpark.cn/Public/static/themes/image/jjl/guide_service3.jpg",
+    "accessed": "2026-09-13",
+    "local": "references/ticket-prices.jpg",
+    "viewed": true,
+    "used_as_generation_input": false
+  }
+]
