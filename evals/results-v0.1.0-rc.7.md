@@ -61,7 +61,7 @@
 
 ## 真实旅行任务效果与交付状态
 
-本地安装产物：[rc.7 ZIP 归档](../dist/releases/travel-guide-skill-v0.1.0-rc.7.zip)、[rc.7 release](../dist/releases/travel-guide-skill-v0.1.0-rc.7.zip)。用户已授权提交并推送，源码、文档、评测和产物作为同一提交交付。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.7.zip` 定位本版实现提交；实际推送结果及本地、跟踪分支与远端提交号核对结果见交付回复。未创建 GitHub Release 或替换云端 Skill。
+本地安装产物：[当前 rc.7 ZIP](../dist/upload/travel-guide-skill-v0.1.0-rc.7.zip)、[rc.7 release](../dist/releases/travel-guide-skill-v0.1.0-rc.7.zip)。用户已授权提交并推送，源码、文档、评测和产物作为同一提交交付。可用 `git log --diff-filter=A -1 --format=%H -- dist/releases/travel-guide-skill-v0.1.0-rc.7.zip` 定位本版实现提交；实际推送结果及本地、跟踪分支与远端提交号核对结果见交付回复。未创建 GitHub Release 或替换云端 Skill。
 
 **本版真实旅行任务效果尚未验证。** 本轮没有实际旅行研究、实物参考采集、图片生成、输出失败注入、独立 Reviewer、修图复审、旅行用户验收或现场使用。西安旧任务复盘作为改进依据，不证明 rc.7 已有效减少返工。
 
