@@ -1,0 +1,118 @@
+[
+  {
+    "file": "page-01-v4.png",
+    "region": [
+      600,
+      245,
+      691,
+      267
+    ],
+    "text": "祈年殿院落",
+    "font": "STHeiti Medium.ttc",
+    "font_size": 18,
+    "stroke_width": 0,
+    "bg": [
+      245,
+      247,
+      249
+    ],
+    "ink": [
+      87,
+      119,
+      164
+    ]
+  },
+  {
+    "file": "page-01-v4.png",
+    "region": [
+      586,
+      1214,
+      914,
+      1252
+    ],
+    "text": "每周一闭馆，法定节假日期间除外。",
+    "font": "Hiragino Sans GB.ttc#1",
+    "font_size": 23,
+    "stroke_width": 0,
+    "bg": [
+      248,
+      247,
+      240
+    ],
+    "ink": [
+      71,
+      101,
+      143
+    ]
+  },
+  {
+    "file": "page-01-v4.png",
+    "sha256": "6af6c9cf017ab989dbe8c8477647133e4178016859016bcf742bfd4d38b9d419",
+    "size": [
+      1086,
+      1448
+    ]
+  },
+  {
+    "file": "page-04-v3.png",
+    "region": [
+      26,
+      919,
+      513,
+      944
+    ],
+    "text": "声波沿内面连续反射，这些工艺与几何条件共同支",
+    "font": "Hiragino Sans GB.ttc#1",
+    "font_size": 22,
+    "stroke_width": 0,
+    "bg": [
+      249,
+      247,
+      238
+    ],
+    "ink": [
+      90,
+      121,
+      155
+    ]
+  },
+  {
+    "file": "page-04-v3.png",
+    "sha256": "8fa55054b978433626da9d2dcede0a21636ff95eb874a6e0df386e7d6612bcc0",
+    "size": [
+      1086,
+      1448
+    ]
+  },
+  {
+    "file": "page-05-v4.png",
+    "region": [
+      789,
+      1194,
+      1034,
+      1217
+    ],
+    "text": "一个人请服务员协助适量点餐。",
+    "font": "Hiragino Sans GB.ttc#1",
+    "font_size": 20,
+    "stroke_width": 0,
+    "bg": [
+      247,
+      248,
+      244
+    ],
+    "ink": [
+      82,
+      112,
+      176
+    ]
+  },
+  {
+    "file": "page-05-v4.png",
+    "sha256": "6f2e4c454042dddea25427ca256e3792c4fa807a062ddbb6492ed100d3935c0a",
+    "size": [
+      1086,
+      1448
+    ]
+  }
+]

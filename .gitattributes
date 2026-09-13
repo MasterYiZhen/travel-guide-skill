@@ -1,0 +1,4 @@
+# curl 抓取的原始 HTTP 响应头保留 CRLF 行尾，作为证据原貌不做空白检查
+*.headers -whitespace
+# PDF 按二进制处理，避免 diff 与空白检查逐行解析
+*.pdf binary

@@ -1,0 +1,7 @@
+tiantan-candidate-03-images.zip (12318824 bytes, sha256 0424c59808ffd0d0e6464dbd59e15b236fa67719a338c46b7e2402600fa95f69) 未归档；条目顺序、大小与 CRC 如下，可用 candidate-03/ 三页 + extract-rc8-materials.sh 取得的 02/03 页 + page-manifest-03.json 重建（字节不保证一致）：
+page-01-v5.png	2579841	1e8c2e47
+page-02-v2.png	2151709	cf0d3922
+page-03-v1.png	2697001	22c7756c
+page-04-v3.png	2616136	e57061e9
+page-05-v4.png	2296448	dde51841
+page-manifest-03.json	2662	e60fbab1

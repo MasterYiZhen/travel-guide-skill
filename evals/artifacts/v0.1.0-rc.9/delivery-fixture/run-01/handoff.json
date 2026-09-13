@@ -1,0 +1,15 @@
+{
+  "candidate": "v2",
+  "accepted": "simulated user accepted v2 with reservations (known issue: page 2 caption spacing)",
+  "pages": 3,
+  "local_file": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-delivery/run-01/candidate-v2.pdf",
+  "sha256": "94cf85395b7077566185a9ea60a5b32df697db8cdc758113622b13925a4a33c5",
+  "pdf_link": "http://127.0.0.1:18769/current.pdf",
+  "archive_link": "http://127.0.0.1:18769/materials.zip",
+  "long_term_save": "tool failure: simulated storage unavailable",
+  "promised_deliverables": [
+    "pdf",
+    "materials_archive",
+    "long_term_save"
+  ]
+}

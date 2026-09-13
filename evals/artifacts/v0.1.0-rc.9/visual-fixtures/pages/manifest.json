@@ -1,0 +1,83 @@
+[
+  {
+    "file": "page-e-control.png",
+    "size": [
+      1080,
+      1440
+    ],
+    "config": {}
+  },
+  {
+    "file": "page-a-text.png",
+    "size": [
+      1080,
+      1440
+    ],
+    "config": {
+      "typo": true,
+      "blur_box": [
+        56,
+        1212,
+        344,
+        1282
+      ],
+      "glyph_scramble": [
+        838,
+        1280,
+        868,
+        1312
+      ]
+    }
+  },
+  {
+    "file": "page-b-font.png",
+    "size": [
+      1080,
+      1440
+    ],
+    "config": {
+      "font_mismatch": true
+    }
+  },
+  {
+    "file": "page-c-juxtapose.png",
+    "size": [
+      1080,
+      1440
+    ],
+    "config": {
+      "leader": false,
+      "detail_title": "局部图",
+      "route_arrows": false,
+      "module_pics": false
+    }
+  },
+  {
+    "file": "page-d-patch.png",
+    "size": [
+      1080,
+      1440
+    ],
+    "config": {
+      "patches": [
+        [
+          650,
+          640,
+          705,
+          720
+        ],
+        [
+          398,
+          1180,
+          600,
+          1214
+        ]
+      ],
+      "leader_from": [
+        300,
+        760
+      ],
+      "legs_small": 4
+    }
+  }
+]
