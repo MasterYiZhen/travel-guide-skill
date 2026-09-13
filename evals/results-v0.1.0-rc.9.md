@@ -117,3 +117,11 @@ F-09 与 §4.4 的第 3 步补句均为测试后的运行时改动，不改变�
 - `behavior/operations.md` 中检查记录的相对路径改为 `../../../results-v0.1.0-rc.9.md`；新增 [travel-trial-review/FINAL-CANDIDATE.md](artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md) 作为接手者入口，列出最终五页的版本、文件来源、哈希与审核／模拟验收／交付结论；`page-manifest-03.json` 保留为 review-03 前的原始快照并在索引中说明身份。原始报告、历史清单与哈希记录未改写。
 - README 与安装说明的 rc.8 历史改为：rc.8 曾以 `77ff55c` 进入 main，随后由 `ac6cdf6` 撤销；当前目录不保留其安装包，历史材料可通过 `77ff55c` 追溯。
 - 重跑静态检查（结构、链接、差量格式、源码／build／ZIP／upload 一致、历史包不变）。`git diff --check` 曾对 `delivery-fixture/run-01/agent-out/*.headers`（curl 抓取的原始 HTTP 响应头，CRLF 行尾）报告尾部空白；这些文件是证据原貌不改写，改为新增 `.gitattributes` 将 `*.headers` 排除出空白检查、`*.pdf` 标为二进制；最终 `git diff --check origin/main` 无输出，package-checks.json 记录为 true。“rc.9 从普通请求自行制作图片及真实云端效果未验证”的边界不变。
+
+## 合并与发布（记录写成后的实际状态）
+
+分支 `codex/travel-guide-rc9`（末提交 `2fc9dd4ad121061cafcb14c890dddeb6533f93e2`）经 PR #1 以 merge commit `fbb9d692e9d4f4013b17034752d4c08c4d36b04b` 合并到 main，保留分支提交历史。合并后在新 clone 中核对：运行时与 `dist/build/` 两文件逐字节一致，`dist/upload/` 仅一个 ZIP，包内条目精确为两文件且字节等于源码，与 `dist/releases/` 同名文件一致。
+
+GitHub Release `v0.1.0-rc.9` 已发布，标签指向该合并提交，资产为同一 ZIP（7,223 字节，SHA-256 `3c13269e9d2be8d40b9dd993b620d50abc3d3805e2c5e37b931cf7d742e21be5`）；从资产链接实际下载的文件与仓库件逐字节一致。README 与安装说明随后把安装入口指向该 Release，`dist/upload/` 记为仓库内副本。
+
+云端 Skill 替换未执行。rc.9 从普通请求自行制作图片的效果、真实用户验收与云端下载仍未验证。

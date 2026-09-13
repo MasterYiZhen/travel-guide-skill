@@ -7,7 +7,7 @@
 - [运行指令](SKILL.md)与[调用策略](agents/openai.yaml)：唯一可编辑的运行时源码。
 - [行为场景](evals/evals.md)与[本版检查记录](evals/results-v0.1.0-rc.9.md)：要求覆盖、方法、结果及未验证范围。
 - [安装与更新](docs/chatgpt-cloud-installation.md)：包结构、版本规则和更新步骤。
-- [当前安装 ZIP](dist/upload/travel-guide-skill-v0.1.0-rc.9.zip)：与当前源码一致的两文件安装包。
+- [Release v0.1.0-rc.9](https://github.com/MasterYiZhen/travel-guide-skill/releases/tag/v0.1.0-rc.9)：安装入口，直接下载两文件 ZIP 并核对 SHA-256；仓库内 [dist/upload/](dist/upload/travel-guide-skill-v0.1.0-rc.9.zip) 保留同一文件的副本。
 
 ## 验证状态
 
@@ -25,4 +25,4 @@
 
 已被取代的历史报告、工作流和草案从现行目录删除；历史修图细节及一次性方法保留在 Git。删除前基线为 `05c4519ef93b3318ca413295be9bca2a4442eb86`，可用 `git ls-tree -r --name-only 05c4519 -- docs` 查目录，再用 `git show 05c4519:docs/<文件名>` 读取。
 
-`dist/releases/` 中的 rc.1—rc.7 为历史安装归档，用于追溯或回退；rc.8 的安装包曾随 `77ff55c` 进入 main，已随 `ac6cdf6` 撤销，当前目录不保留，可通过该提交追溯。当前安装入口为 `dist/upload/`。Git 提交、远端发布与云端安装分别执行，Git 更新不自动替换已安装技能。
+`dist/releases/` 中的 rc.1—rc.7 为历史安装归档，用于追溯或回退；rc.8 的安装包曾随 `77ff55c` 进入 main，已随 `ac6cdf6` 撤销，当前目录不保留，可通过该提交追溯。当前安装入口为 [Release v0.1.0-rc.9](https://github.com/MasterYiZhen/travel-guide-skill/releases/tag/v0.1.0-rc.9)，其资产与 `dist/upload/` 中的 ZIP 逐字节一致。Git 提交、远端发布与云端安装分别执行，Git 更新不自动替换已安装技能。
