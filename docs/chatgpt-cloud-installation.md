@@ -2,7 +2,14 @@
 
 ## 当前版本与验证范围
 
-当前候选为 **v0.1.0-rc.9**，推荐安装文件为 [当前 ZIP](../dist/upload/travel-guide-skill-v0.1.0-rc.9.zip)。实现与安装包检查结果见 [rc.9 检查记录](../evals/results-v0.1.0-rc.9.md)。
+当前候选为 **v0.1.0-rc.9**，已合并至 main（`fbb9d692e9d4f4013b17034752d4c08c4d36b04b`）并发布为 [Release v0.1.0-rc.9](https://github.com/MasterYiZhen/travel-guide-skill/releases/tag/v0.1.0-rc.9)。推荐从该 Release 下载安装文件：
+
+```text
+travel-guide-skill-v0.1.0-rc.9.zip   7,223 字节
+SHA-256  3c13269e9d2be8d40b9dd993b620d50abc3d3805e2c5e37b931cf7d742e21be5
+```
+
+仓库内 [dist/upload/](../dist/upload/travel-guide-skill-v0.1.0-rc.9.zip) 保留同一文件的副本，两者逐字节一致。实现与安装包检查结果见 [rc.9 检查记录](../evals/results-v0.1.0-rc.9.md)。
 
 本版明确默认详尽讲解、图文融合与实际成品检查标准，合并时间预算与用餐规则，补清限定范围修复、带保留验收、获取端交付和流程自检。验证方法、证据和实际结果以 rc.9 检查记录为准，分别报告静态规则检查、独立模型响应、实际图片审核、模拟验收、工具及本地渠道检查。实施环境无模型图片生成能力，也无云端安装渠道；完整候选的正式审核、修复与复审复用 rc.8 历史五页候选；rc.9 自行制作效果、真实用户验收、云端下载和现场效果以安装后的实际使用为依据。
 
@@ -10,7 +17,7 @@
 
 仓库此前记录的可用入口为：**ChatGPT 网页端 → 插件 → 技能 → `+` → 上传技能文件**。这是旧版安装记录，本版没有重新验证当前账号或客户端界面；安装时以实际技能管理界面为准。仓库此前采用网页上传的云端 Skill 和 Cloud Work，本版没有新增 Desktop 安装能力声明。
 
-1. checkout 需要安装的提交，使用 `dist/upload/` 中唯一 ZIP；已有发布包无需重新构建。
+1. 从 [Release](https://github.com/MasterYiZhen/travel-guide-skill/releases/tag/v0.1.0-rc.9) 下载 ZIP，或 checkout 对应提交后取 `dist/upload/` 中唯一 ZIP；下载后核对 SHA-256，已有发布包无需重新构建。
 2. 在网页技能管理界面上传完整 ZIP，更新或替换旧版本。包内保留 `agents/openai.yaml` 的显式调用策略。
 3. 在新的、干净的旅行任务中显式选择 Travel Guide Skill，检查能否正常加载；记录实际客户端和安装结果。
 4. 通过完整旅行任务验证真实图片、审核修复和用户验收流程，分别记录实际执行到的环节及尚未验证部分。
@@ -32,7 +39,7 @@ travel-guide-skill/agents/openai.yaml
 |---|---|
 | `dist/build/travel-guide-skill/` | 当前源码的展开包，两文件逐字节一致；由源码重建，不独立编辑。 |
 | `dist/releases/` | 版本化安装归档，已有 ZIP 保留且不覆盖；rc.1—rc.7 仅供历史追溯或回退。rc.8 的 ZIP 曾随提交 `77ff55c` 进入 main，随后由 `ac6cdf6` 撤销，当前目录不保留，可通过 `77ff55c` 追溯。 |
-| `dist/upload/` | 唯一推荐安装 ZIP，与 releases 中同版本文件逐字节一致。 |
+| `dist/upload/` | 仓库内的推荐安装 ZIP 副本，与 `dist/releases/` 中同版本文件及对应 Release 资产逐字节一致。 |
 
 源码、展开包、新 release、唯一 upload、必要文档和评测结果随同一个 Git 提交保存，使 checkout 后可直接获得对应安装包。
 
@@ -45,7 +52,7 @@ travel-guide-skill/agents/openai.yaml
 3. 从源码重建 build，新增版本化 release，将 upload 切换为新版本。
 4. 验证源码、build、ZIP 内容和 release/upload 一致性。
 5. 审核差量，获 Git 提交授权后将相应文件一起提交，报告提交号、安装位置和验证状态；未提交时明确说明。
-6. 需要发布或安装时执行相应动作，并更新实际结果。真实旅行任务验证状态独立记录。
+6. 需要发布或安装时执行相应动作：GitHub Release 以 `dist/upload/` 中的同一 ZIP 作为资产、标签指向该版本所在提交，随后更新本文件的当前版本与安装入口。真实旅行任务验证状态独立记录。
 
 ## 构建示例
 
@@ -108,6 +115,7 @@ PY
 - 按 [行为场景](../evals/evals.md) 选择与差量风险相称的检查并记录实际方法；E01—E18 为既有及扩展场景，E19—E22 覆盖默认深度、认可维度、实际图片审核与获取端交付。文本推演、模型响应、实际图片审核和工具执行分别记录，不互相替代。
 - 对根目录和 build 两文件使用 `cmp`；对 release 使用 `unzip -t`、`unzip -Z1`，检查精确两文件清单，并将 ZIP 内实际字节与根目录源码比较。
 - 使用 `cmp` 比较 release 与 upload，检查 upload 只有一个推荐安装 ZIP，历史 release 未被修改。
+- 发布 GitHub Release 后，从其资产链接实际下载 ZIP，核对 SHA-256、与 `dist/upload/` 逐字节一致、包内条目与根目录源码字节相同，并确认标签指向预期提交。
 
 实施报告分别展示：
 
