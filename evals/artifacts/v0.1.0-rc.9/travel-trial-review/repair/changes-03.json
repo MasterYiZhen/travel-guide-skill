@@ -1,0 +1,56 @@
+[
+  {
+    "file": "page-01-v5.png",
+    "region": [
+      600,
+      245,
+      691,
+      267
+    ],
+    "text": "祈年殿院落",
+    "font": "STHeiti Medium.ttc",
+    "font_size": 18,
+    "stroke_width": 0,
+    "bg": [
+      245,
+      247,
+      249
+    ],
+    "ink": [
+      87,
+      119,
+      164
+    ]
+  },
+  {
+    "file": "page-01-v5.png",
+    "region": [
+      633,
+      1228,
+      890,
+      1249
+    ],
+    "text": "每周一闭馆，法定节假日期间除外。",
+    "font": "Hiragino Sans GB.ttc#1",
+    "font_size": 17,
+    "stroke_width": 0,
+    "bg": [
+      249,
+      247,
+      240
+    ],
+    "ink": [
+      96,
+      122,
+      159
+    ]
+  },
+  {
+    "file": "page-01-v5.png",
+    "sha256": "69a3358785f5eddc3a27078f37a715e3596f9a518d28b15091e5e8a487da47c7",
+    "size": [
+      1086,
+      1448
+    ]
+  }
+]

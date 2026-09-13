@@ -1,0 +1,41 @@
+{
+  "candidate": "tiantan-candidate-03",
+  "accepted": "simulated user: 带保留通过——接受当前版本，保留已知次要问题（四处重绘行字重偏细等，见 review-03）；要求交付图片与 PDF。",
+  "pages": 5,
+  "reading_order": [
+    "page-01-v5.png",
+    "page-02-v2.png",
+    "page-03-v1.png",
+    "page-04-v3.png",
+    "page-05-v4.png"
+  ],
+  "promised_deliverables": [
+    "png_images",
+    "pdf"
+  ],
+  "local_files": {
+    "tiantan-candidate-03.pdf": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-delivery/files/tiantan-candidate-03.pdf",
+    "tiantan-candidate-03-images.zip": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-delivery/files/tiantan-candidate-03-images.zip"
+  },
+  "sha256": {
+    "tiantan-candidate-03.pdf": {
+      "bytes": 1643480,
+      "sha256": "5bbf7623cf5c1b966f8900bd413981117d86f60923acb134dd5c35eb7dc1bb5a"
+    },
+    "tiantan-candidate-03-images.zip": {
+      "bytes": 12318824,
+      "sha256": "0424c59808ffd0d0e6464dbd59e15b236fa67719a338c46b7e2402600fa95f69"
+    }
+  },
+  "links": {
+    "pdf": "http://127.0.0.1:18770/tiantan-candidate-03.pdf",
+    "images_zip": "http://127.0.0.1:18770/tiantan-candidate-03-images.zip"
+  },
+  "page_manifest": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/page-manifest-03.json",
+  "review_reports": [
+    "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/review-01.md",
+    "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/rereview-02/review-02.md",
+    "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/rereview-03/review-03.md"
+  ],
+  "simulated": true
+}

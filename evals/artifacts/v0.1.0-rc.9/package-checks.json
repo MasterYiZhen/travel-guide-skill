@@ -1,0 +1,388 @@
+{
+  "version": "v0.1.0-rc.9",
+  "links": [
+    {
+      "file": "README.md",
+      "target": "SKILL.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "agents/openai.yaml",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "evals/evals.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "evals/results-v0.1.0-rc.9.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/chatgpt-cloud-installation.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "dist/upload/travel-guide-skill-v0.1.0-rc.9.zip",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "evals/results-v0.1.0-rc.9.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/README.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/package-checks.json",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/behavior/operations.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/delivery-fixture/fixture.py",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/delivery-fixture/run-01/agent-out/T6-report.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/visual-fixtures/first-review/review.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/visual-fixtures/rereview/rereview.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/extract-rc8-materials.sh",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/rc8-real-review/first-review/review.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/rc8-real-review/rereview/rereview.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/travel-trial-review/first-review/review-01.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/travel-trial-review/repair/repair.py",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/travel-trial-review/rereview/review-02.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/travel-trial-review/rereview-03/review-03.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/travel-trial-review/delivery/handoff.json",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/travel-trial-review/delivery/agent-out/delivery-and-selfcheck.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/runtime-under-test.txt",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/independent-review/report.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.6.md",
+      "target": "../SKILL.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.6.md",
+      "target": "../agents/openai.yaml",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.6.md",
+      "target": "../dist/releases/travel-guide-skill-v0.1.0-rc.6.zip",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.6.md",
+      "target": "../dist/releases/travel-guide-skill-v0.1.0-rc.6.zip",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.7.md",
+      "target": "../SKILL.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.7.md",
+      "target": "../agents/openai.yaml",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.7.md",
+      "target": "../dist/releases/travel-guide-skill-v0.1.0-rc.7.zip",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.3.md",
+      "target": "results-v0.1.0-rc.4.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.3.md",
+      "target": "evals.md",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.4.md",
+      "target": "../dist/releases/travel-guide-skill-v0.1.0-rc.4.zip",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.5.md",
+      "target": "../dist/releases/travel-guide-skill-v0.1.0-rc.5.zip",
+      "exists": true
+    },
+    {
+      "file": "evals/results-v0.1.0-rc.5.md",
+      "target": "../dist/releases/travel-guide-skill-v0.1.0-rc.5.zip",
+      "exists": true
+    },
+    {
+      "file": "evals/evals.md",
+      "target": "results-v0.1.0-rc.9.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "../../results-v0.1.0-rc.9.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "runtime-under-test.txt",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "package-checks.json",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "behavior/operations.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "delivery-fixture/fixture.py",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "delivery-fixture/run-01/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "delivery-fixture/run-01/agent-out/T6-report.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "visual-fixtures/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "visual-fixtures/first-review/review.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "visual-fixtures/rereview/rereview.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "rc8-real-review/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "extract-rc8-materials.sh",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "rc8-materials-sha256.txt",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/first-review/review-01.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/repair/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/candidate-02/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/rereview/review-02.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/candidate-03/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/rereview-03/review-03.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/delivery/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/delivery/agent-out/delivery-and-selfcheck.md",
+      "exists": true
+    },
+    {
+      "file": "docs/chatgpt-cloud-installation.md",
+      "target": "../dist/upload/travel-guide-skill-v0.1.0-rc.9.zip",
+      "exists": true
+    },
+    {
+      "file": "docs/chatgpt-cloud-installation.md",
+      "target": "../evals/results-v0.1.0-rc.9.md",
+      "exists": true
+    },
+    {
+      "file": "docs/chatgpt-cloud-installation.md",
+      "target": "../evals/evals.md",
+      "exists": true
+    }
+  ],
+  "checks": {
+    "broken_local_links": 0,
+    "skill_title_version": true,
+    "allow_implicit_invocation_false": true,
+    "eight_steps": [
+      "1. 研究与推荐",
+      "2. 收敛并确认行程",
+      "3. 制作完整候选",
+      "4. 独立审核与修复",
+      "5. 系统 PASS 后等待用户验收",
+      "6. 用户反馈与再次验收",
+      "7. 最终交付",
+      "8. 流程自检与结束"
+    ],
+    "eight_steps_count_ok": true,
+    "description_chars": 88,
+    "skill_bytes": 15322,
+    "build_equals_source": true,
+    "upload_files": [
+      "travel-guide-skill-v0.1.0-rc.9.zip"
+    ],
+    "upload_single_and_named": true,
+    "zip_testzip_none": true,
+    "zip_entries": [
+      "travel-guide-skill/SKILL.md",
+      "travel-guide-skill/agents/openai.yaml"
+    ],
+    "zip_entries_exact": true,
+    "zip_bytes_equal_source": true,
+    "release_equals_upload": true,
+    "git_diff_check_clean": true
+  },
+  "runtime_sha256": {
+    "SKILL.md": "09d0a7b4a7258bd83435eb29cdae4d6523701a401866e5fcabe7ee2b5115b553",
+    "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94"
+  },
+  "release_sha256": "3c13269e9d2be8d40b9dd993b620d50abc3d3805e2c5e37b931cf7d742e21be5",
+  "release_bytes": 7223,
+  "historical_releases": [
+    {
+      "file": "travel-guide-skill-v0.1.0-rc.1.zip",
+      "unchanged_vs_origin_main": true
+    },
+    {
+      "file": "travel-guide-skill-v0.1.0-rc.2.zip",
+      "unchanged_vs_origin_main": true
+    },
+    {
+      "file": "travel-guide-skill-v0.1.0-rc.3.zip",
+      "unchanged_vs_origin_main": true
+    },
+    {
+      "file": "travel-guide-skill-v0.1.0-rc.4.zip",
+      "unchanged_vs_origin_main": true
+    },
+    {
+      "file": "travel-guide-skill-v0.1.0-rc.5.zip",
+      "unchanged_vs_origin_main": true
+    },
+    {
+      "file": "travel-guide-skill-v0.1.0-rc.6.zip",
+      "unchanged_vs_origin_main": true
+    },
+    {
+      "file": "travel-guide-skill-v0.1.0-rc.7.zip",
+      "unchanged_vs_origin_main": true
+    }
+  ]
+}

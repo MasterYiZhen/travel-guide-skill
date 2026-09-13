@@ -1,0 +1,62 @@
+{
+  "candidate": "tiantan-candidate-02",
+  "simulated_user_confirmation": true,
+  "formal_review": "review-01 FAIL (4 glyph issues) -> repaired -> awaiting review-02",
+  "pages": [
+    {
+      "page": 1,
+      "version": "v4",
+      "status": "repaired_self_checked_ready_for_rereview",
+      "file": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/images/page-01-v4.png",
+      "bytes": 2571141,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "6af6c9cf017ab989dbe8c8477647133e4178016859016bcf742bfd4d38b9d419",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 2,
+      "version": "v2",
+      "status": "unchanged_since_review-01",
+      "file": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/images/page-02-v2.png",
+      "bytes": 2151709,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "52a7f0efe1f07d015302753680579a0374bdb2d2c79cb731298c812bcce9c6c3",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 3,
+      "version": "v1",
+      "status": "unchanged_since_review-01",
+      "file": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/images/page-03-v1.png",
+      "bytes": 2697001,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "e2f1ae11709b01781120215fc3ea0b41abb7d1d1955ae29d648d2c30db33d057",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 4,
+      "version": "v3",
+      "status": "repaired_self_checked_ready_for_rereview",
+      "file": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/images/page-04-v3.png",
+      "bytes": 2616136,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "8fa55054b978433626da9d2dcede0a21636ff95eb874a6e0df386e7d6612bcc0",
+      "pending_required_revisions": []
+    },
+    {
+      "page": 5,
+      "version": "v4",
+      "status": "repaired_self_checked_ready_for_rereview",
+      "file": "/private/tmp/claude-501/-Users-yizhen-Documents-travel-guide-skill/68f3c30b-96d0-45ca-aed8-159bdad37725/scratchpad/rc9-trial-review/images/page-05-v4.png",
+      "bytes": 2296448,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "6f2e4c454042dddea25427ca256e3792c4fa807a062ddbb6492ed100d3935c0a",
+      "pending_required_revisions": []
+    }
+  ]
+}
