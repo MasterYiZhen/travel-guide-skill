@@ -108,3 +108,12 @@ F-09 与 §4.4 的第 3 步补句均为测试后的运行时改动，不改变�
 ## 发布状态
 
 本地源码、build、release 与 upload 已同步至 rc.9，一致性检查见上。工作分支提交与推送状态、主分支合并、GitHub Release、云端安装分别在最终交付回复中报告；本记录写成时 main 未改动。
+
+## 合并前收尾（基线 `5afec61`）
+
+用户审查后要求的资料层修正，运行时与安装包字节不变（SKILL.md sha256 `09d0a7b4a7258bd83435eb29cdae4d6523701a401866e5fcabe7ee2b5115b553`，rc.9 ZIP sha256 `3c13269e9d2be8d40b9dd993b620d50abc3d3805e2c5e37b931cf7d742e21be5`，收尾前后一致）：
+
+- `delivery-fixture/fixture.py`：create 在任何写入前检查 candidate-v1.pdf、candidate-v2.pdf、handoff.json 三个目标，任一存在即拒绝并提示使用新目录。实际验证：全新目录正常生成；已有完整产物拒绝且文件哈希不变；只有 candidate-v1.pdf 时拒绝、原文件不变且未写入其他目标；三个 HTTP 入口行为不变（`/current.pdf` 200 且等于 v1，`/candidate-v2.pdf` 200 且等于 v2，`/materials.zip` 503）。
+- `behavior/operations.md` 中检查记录的相对路径改为 `../../../results-v0.1.0-rc.9.md`；新增 [travel-trial-review/FINAL-CANDIDATE.md](artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md) 作为接手者入口，列出最终五页的版本、文件来源、哈希与审核／模拟验收／交付结论；`page-manifest-03.json` 保留为 review-03 前的原始快照并在索引中说明身份。原始报告、历史清单与哈希记录未改写。
+- README 与安装说明的 rc.8 历史改为：rc.8 曾以 `77ff55c` 进入 main，随后由 `ac6cdf6` 撤销；当前目录不保留其安装包，历史材料可通过 `77ff55c` 追溯。
+- 重跑静态检查（结构、链接、差量格式、源码／build／ZIP／upload 一致、历史包不变）。`git diff --check` 曾对 `delivery-fixture/run-01/agent-out/*.headers`（curl 抓取的原始 HTTP 响应头，CRLF 行尾）报告尾部空白；这些文件是证据原貌不改写，改为新增 `.gitattributes` 将 `*.headers` 排除出空白检查。“rc.9 从普通请求自行制作图片及真实云端效果未验证”的边界不变。

@@ -21,8 +21,8 @@
 
 现行要求来自本版用户确认的产品目标、决策规则、流程节点和质量标准，对应关系保存在检查记录中。运行时自包含，旧报告不作为新增规则来源。[OpenAI 官方文章](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra)用于改进描述精准度、按需加载、合并重复指令及以完成条件为主的表达，具体旅行确认与验收节点遵循用户要求。
 
-旧 rc.8（提交 `77ff55cd16d2a0c484a289c2f0eaa06f2a01b580`）已在 main 上被撤销，其运行时差量与 `evals/artifacts/v0.1.0-rc.8/` 只作为历史参考，可用 `git show 77ff55c:<路径>` 读取；本版复用其中材料时在检查记录中分别标识来源。
+旧 rc.8 曾以提交 `77ff55cd16d2a0c484a289c2f0eaa06f2a01b580` 进入 main，随后由 `ac6cdf69ececc4a589ef71e0c11196141a60faee` 撤销；当前目录不保留其安装包，其运行时差量与 `evals/artifacts/v0.1.0-rc.8/` 只作为历史参考，可用 `git show 77ff55c:<路径>` 追溯；本版复用其中材料时在检查记录中分别标识来源。
 
 已被取代的历史报告、工作流和草案从现行目录删除；历史修图细节及一次性方法保留在 Git。删除前基线为 `05c4519ef93b3318ca413295be9bca2a4442eb86`，可用 `git ls-tree -r --name-only 05c4519 -- docs` 查目录，再用 `git show 05c4519:docs/<文件名>` 读取。
 
-`dist/releases/` 中的 rc.1—rc.7 为历史安装归档，用于追溯或回退；rc.8 未曾进入 main 的发布目录。当前安装入口为 `dist/upload/`。Git 提交、远端发布与云端安装分别执行，Git 更新不自动替换已安装技能。
+`dist/releases/` 中的 rc.1—rc.7 为历史安装归档，用于追溯或回退；rc.8 的安装包曾随 `77ff55c` 进入 main，已随 `ac6cdf6` 撤销，当前目录不保留，可通过该提交追溯。当前安装入口为 `dist/upload/`。Git 提交、远端发布与云端安装分别执行，Git 更新不自动替换已安装技能。

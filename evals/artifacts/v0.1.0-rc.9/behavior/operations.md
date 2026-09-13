@@ -1,6 +1,6 @@
 # rc.9 行为测试操作记录（真实执行，不是预期答案）
 
-执行日期：2026-09-13。执行环境：Claude Code（桌面端），被测执行者与 Reviewer 均为通过 Agent 工具启动的独立子 Agent，模型 Claude Fable 5.1（`claude-fable-5-1`，继承主会话模型）。每个 Agent 只收到：工作分支上的当前 `SKILL.md`（rc.9 候选，内容与 `../runtime-under-test.txt` 一致）、该测试的原始输入，以及明确的读取边界（不得读取 evals、docs、README、dist、git 历史，不得联网）。预期行为（evals.md）未提供给任何被测 Agent；判断由实施者事后对照 evals.md 完成，记录在 `../../results-v0.1.0-rc.9.md`。
+执行日期：2026-09-13。执行环境：Claude Code（桌面端），被测执行者与 Reviewer 均为通过 Agent 工具启动的独立子 Agent，模型 Claude Fable 5.1（`claude-fable-5-1`，继承主会话模型）。每个 Agent 只收到：工作分支上的当前 `SKILL.md`（rc.9 候选，内容与 `../runtime-under-test.txt` 一致）、该测试的原始输入，以及明确的读取边界（不得读取 evals、docs、README、dist、git 历史，不得联网）。预期行为（evals.md）未提供给任何被测 Agent；判断由实施者事后对照 evals.md 完成，记录在 `../../../results-v0.1.0-rc.9.md`。
 
 各响应文件首行为被测 Agent 自报的读取范围。所有旅行地点、文物、时间数值均为虚构或给定测试条件。
 

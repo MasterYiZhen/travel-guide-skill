@@ -127,6 +127,11 @@
       "exists": true
     },
     {
+      "file": "evals/results-v0.1.0-rc.9.md",
+      "target": "artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "exists": true
+    },
+    {
       "file": "evals/results-v0.1.0-rc.6.md",
       "target": "../SKILL.md",
       "exists": true
@@ -263,6 +268,11 @@
     },
     {
       "file": "evals/artifacts/v0.1.0-rc.9/README.md",
+      "target": "travel-trial-review/FINAL-CANDIDATE.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/README.md",
       "target": "travel-trial-review/first-review/review-01.md",
       "exists": true
     },
@@ -299,6 +309,91 @@
     {
       "file": "evals/artifacts/v0.1.0-rc.9/README.md",
       "target": "travel-trial-review/delivery/agent-out/delivery-and-selfcheck.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "candidate-03/page-01-v5.png",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "candidate-02/page-04-v3.png",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "candidate-02/page-05-v4.png",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "../rc8-materials-sha256.txt",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "candidate-02/page-manifest-02.json",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "candidate-03/page-manifest-03.json",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "candidate-03/change-scope-03.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "candidate-02/change-scope-02.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "repair/",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "first-review/review-01.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "rereview/review-02.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "rereview-03/review-03.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "delivery/handoff.json",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "delivery/agent-out/delivery-and-selfcheck.md",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "delivery/tiantan-candidate-03.pdf",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "delivery/images-zip-listing.txt",
+      "exists": true
+    },
+    {
+      "file": "evals/artifacts/v0.1.0-rc.9/travel-trial-review/FINAL-CANDIDATE.md",
+      "target": "delivery/files-sha256.txt",
       "exists": true
     },
     {
@@ -347,7 +442,7 @@
     "zip_entries_exact": true,
     "zip_bytes_equal_source": true,
     "release_equals_upload": true,
-    "git_diff_check_clean": true
+    "git_diff_check_clean": false
   },
   "runtime_sha256": {
     "SKILL.md": "09d0a7b4a7258bd83435eb29cdae4d6523701a401866e5fcabe7ee2b5115b553",

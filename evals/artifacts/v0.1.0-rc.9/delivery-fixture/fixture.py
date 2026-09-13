@@ -9,7 +9,7 @@
   /candidate-v2.pdf   -> 200，返回已验收的 v2
   /materials.zip      -> 503（制作资料存档不可用）
   long_term_save      -> handoff 中记录为工具失败（交接输入，不由服务模拟）
-所有路径相对 run_dir，不访问生产系统，不覆盖既有归档证据。
+所有路径相对 run_dir，不访问生产系统；create 在写入前检查 candidate-v1.pdf、candidate-v2.pdf、handoff.json 三个目标，任一存在即拒绝，不覆盖既有归档证据。
 """
 import hashlib
 import json
@@ -22,8 +22,10 @@ def create(run: Path, port: int) -> None:
     from reportlab.pdfgen import canvas
 
     run.mkdir(parents=True, exist_ok=True)
-    if (run / "handoff.json").exists():
-        raise SystemExit(f"{run} 已含 fixture 产物，拒绝覆盖；请使用新的运行目录")
+    targets = [run / "candidate-v1.pdf", run / "candidate-v2.pdf", run / "handoff.json"]
+    existing = [t.name for t in targets if t.exists()]
+    if existing:  # 任何写入开始前检查本次全部写入目标，存在即拒绝，避免覆盖归档证据
+        raise SystemExit(f"{run} 已存在本次写入目标 {existing}，拒绝覆盖；请使用新的运行目录")
     for version in (1, 2):
         c = canvas.Canvas(str(run / f"candidate-v{version}.pdf"), pagesize=(540, 720))
         for page in range(1, 4):

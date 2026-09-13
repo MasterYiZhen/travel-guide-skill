@@ -31,7 +31,7 @@ travel-guide-skill/agents/openai.yaml
 | 目录 | 用途与一致性要求 |
 |---|---|
 | `dist/build/travel-guide-skill/` | 当前源码的展开包，两文件逐字节一致；由源码重建，不独立编辑。 |
-| `dist/releases/` | 版本化安装归档，已有 ZIP 保留且不覆盖；rc.1—rc.7 仅供历史追溯或回退，rc.8 未进入 main。 |
+| `dist/releases/` | 版本化安装归档，已有 ZIP 保留且不覆盖；rc.1—rc.7 仅供历史追溯或回退。rc.8 的 ZIP 曾随提交 `77ff55c` 进入 main，随后由 `ac6cdf6` 撤销，当前目录不保留，可通过 `77ff55c` 追溯。 |
 | `dist/upload/` | 唯一推荐安装 ZIP，与 releases 中同版本文件逐字节一致。 |
 
 源码、展开包、新 release、唯一 upload、必要文档和评测结果随同一个 Git 提交保存，使 checkout 后可直接获得对应安装包。
