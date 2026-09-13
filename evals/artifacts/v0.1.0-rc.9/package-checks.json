@@ -442,7 +442,7 @@
     "zip_entries_exact": true,
     "zip_bytes_equal_source": true,
     "release_equals_upload": true,
-    "git_diff_check_clean": false
+    "git_diff_check_clean": true
   },
   "runtime_sha256": {
     "SKILL.md": "09d0a7b4a7258bd83435eb29cdae4d6523701a401866e5fcabe7ee2b5115b553",
